@@ -18,9 +18,8 @@ public class Dispenser {
 		return Arrays.asList(new Drink());
 	}
 
-	public void pay(int i) {
-		// TODO Auto-generated method stub
-		this.cashController.givebackMoney(100);
+	public void pay(int amount) {
+		if(amount>100) this.cashController.givebackMoney(amount-100);
 	}
 
 	public void select(Drink d) {
