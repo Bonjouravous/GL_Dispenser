@@ -1,0 +1,5 @@
+
+syntax: regexp
+^\.(?!hgignore)
+syntax: regexp
+^target$
