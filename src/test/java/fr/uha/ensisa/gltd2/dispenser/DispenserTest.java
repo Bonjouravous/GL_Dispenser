@@ -26,7 +26,7 @@ public class DispenserTest {
 	public void checkComplete() {
 		verifyNoMoreInteractions(dummyCashController, dummyProvider);
 	}
-/*
+
 	@Test
 	public void firstDrinkGoodAmount() {
 		List<Drink> listDrinks = sut.getDrinks();
@@ -35,7 +35,7 @@ public class DispenserTest {
 		verify(dummyProvider).giveDrink(coca);
 		verify(dummyCashController, never()).givebackMoney(anyInt());
 	}
-*/
+
 	@Test
 	public void firstDrinkLargeAmount() {
 		List<Drink> listDrinks = sut.getDrinks();
